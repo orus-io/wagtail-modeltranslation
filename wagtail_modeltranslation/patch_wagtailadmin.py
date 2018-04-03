@@ -267,7 +267,7 @@ def _new_set_url_path(self, parent):
     # update url_path for children pages
     for child in self.get_children().specific():
         child.set_url_path(self.specific)
-        child.save()
+        # child.save()
 
     return self.url_path
 
